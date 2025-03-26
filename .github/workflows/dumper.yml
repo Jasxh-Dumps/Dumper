@@ -35,7 +35,7 @@ jobs:
         
       - name: Cloning Dumper
         run: |
-             git config --global user.email "rulsmods@gmail.com" && git config --global user.name "cumaRull"
+             git config --global user.email "yashpithani7@gmail.com" && git config --global user.name "yashpithani7"
              git clone https://github.com/DumprX/DumprX --depth=1
 
       - name: Installing Requirements
@@ -47,7 +47,7 @@ jobs:
         run: |
              cd DumprX
              export PUSH_TO_GITLAB=true
-             echo "yuzumi-dumps" > .gitlab_group
+             echo "YashDumps" > .gitlab_group
              echo "${{ secrets.GITLAB_TOKEN }}" > .gitlab_token
              echo "${{ secrets.TGCHAT }}" >.tg_chat
              echo "${{ secrets.TGTOKEN }}" > .tg_token
